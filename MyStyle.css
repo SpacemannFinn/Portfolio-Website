@@ -16,6 +16,13 @@
     background: none;
 }
 
+.navbar-container {
+    position: relative;
+    display: flex;
+    padding-top: 1rem;
+    max-height: 3rem;
+}
+
 .header {
     /* some padding */
     text-align: left;
@@ -36,11 +43,7 @@
     text-decoration: none;
 }
 
-.navbar-container {
-    position: relative;
-    display: flex;
-    padding-top: 1rem;
-}
+
 
 /* Style the top navigation bar */
 .navbar {

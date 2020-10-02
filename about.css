@@ -1,0 +1,28 @@
+/*about.html section*/
+
+.about {
+  background-image: none;
+  background-color: slategray;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+hr{
+  margin: 0 auto;
+  border: 0.001rem solid #ccc;
+  max-width: 2.4rem;
+  transform: translateX(-8.6rem);
+}
+
+.trivia{
+  text-align: center;
+}
+
+h2{
+  padding-top: 5rem;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.about-blurb{
+  padding: 4rem 38rem 0rem 38rem;
+}

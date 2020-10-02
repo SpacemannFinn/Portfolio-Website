@@ -1,0 +1,132 @@
+/* Contact.html Section */
+
+.contact-blurb {
+  padding-top: 7rem;
+  padding-left: 3rem;
+  padding-right: 7rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact {
+  background-image: none;
+  background-color: slateblue;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.contact-form {
+  padding-top: 2rem;
+  padding-left: 30.9rem;
+}
+
+input[name="fname"] {
+  width: 15rem;
+}
+
+input[name="lname"] {
+  width: 15rem;
+}
+
+input[name="email"] {
+  width: 13rem;
+}
+
+.label-input {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.underlabel {
+  font-weight: bold;
+  font-size: 0.73rem;
+  padding-right: 11.7rem;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"] {
+  /* Some padding */
+  border: 0.01rem solid #ccc;
+  /* Gray border */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  padding: 0.5rem;
+  /* Add a top margin */
+  margin: 0 auto;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="email"] {
+  /* Some padding */
+  border: 0.01rem solid #ccc;
+  /* Gray border */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  padding: 0.5rem 15rem;
+  /* Add a top margin */
+  margin: 0 auto;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+select {
+  /* Some padding */
+  border: 0.01rem solid #ccc;
+  /* Gray border */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  padding: 0.3rem;
+  /* Add a top margin */
+  margin: 0 auto;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+textarea {
+  /* Some padding */
+  border: 0.01rem solid #ccc;
+  /* Gray border */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  padding: 1.2rem 11rem;
+  /* Add a top margin */
+  margin: 0 auto;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 0.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.submit{
+  padding-top: 1rem;
+  padding-left: 12rem;
+}
+
+.line {
+  padding-right: 7rem;
+}
+
+hr {
+  margin: 0 auto;
+  border: 0.001rem solid #ccc;
+  max-width: 30rem;
+}

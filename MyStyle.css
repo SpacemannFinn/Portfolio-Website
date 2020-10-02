@@ -1,0 +1,150 @@
+/*General Section*/
+:root {
+    font-size: 1vw;
+    --fontb: black;
+    --fontw: white;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+/* For Mozilla Firefox */
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+.header {
+    /* some padding */
+    text-align: left;
+    color: var(--fontw);
+    font-family: "Bungee Shade", cursive;
+    font-size: 1.09559rem;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0.26rem;
+    margin: 0 0 0 0;
+    line-height: 15%;
+}
+
+.header a {
+    color: var(--fontw);
+    text-decoration: none;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    padding-top: 1rem;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    position: relative;
+    overflow: hidden;
+    /* Dark background color */
+    list-style: none;
+    padding-top: 1.04rem;
+    padding-right: 6.908rem;
+    padding-left: 3.608rem;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    position: relative;
+    /* Change the display to block, for responsive reasons (see below) */
+    color: var(--fontw);
+    /* White text color */
+    text-align: center;
+    /* Center the text */
+    padding-left: 0.52rem;
+    padding-right: 0.52rem;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1.04rem;
+}
+
+.navbar li {
+    position: relative;
+    /* Make sure that the links stay side-by-side */
+    list-style-type: none;
+    padding-left: 1.04rem;
+    padding-right: 1.04rem;
+}
+
+.navbar li>a {
+    padding: 0.52rem 0.52rem;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+}
+
+.socials {
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow */
+    list-style: none;
+    padding-top: 1.016rem;
+    padding-left: 18.24rem;
+}
+
+.socials a {
+    position: relative;
+    text-decoration: none;
+    padding-right: 1.04rem;
+    font-size: 1.6rem;
+    color: var(--fontw);
+}
+
+.socials li {
+    list-style-type: none;
+    padding-left: 1.04rem;
+    padding-right: 1.04rem;
+}
+
+.socials>li>a:hover,
+.socials>li>a:focus {
+    text-decoration: none;
+}
+
+/*nen.studio.html section*/
+
+.main-container {
+    position: relative;
+    display: flex;
+}
+
+.text-overlay {
+    padding: 23rem 15.625rem 0rem 26.042rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    text-shadow: -0.2rem 0.2rem 0rem #000;
+}
+
+#bigger-text {
+    font-size: 3.65rem;
+    text-align: center;
+}
+
+#smaller-text {
+    font-size: 1.5625rem;
+    text-align: center;
+}
+
+body {
+    color: var(--fontw);
+    background-color: var(--fontb);
+    /*responsive design stuff for background image*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

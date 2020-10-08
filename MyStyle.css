@@ -1,6 +1,6 @@
 /*General Section*/
 :root {
-    font-size: 1vw;
+    font-size: 14.4px;
     --fontb: black;
     --fontw: white;
 }
@@ -151,3 +151,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 700px){
+    
+} 

@@ -1,8 +1,12 @@
 /*General Section*/
 :root {
-    font-size: 14.4px;
+    font-size: 19.2px;
     --fontb: black;
     --fontw: white;
+}
+
+html {
+    overflow-y: overlay;
 }
 
 ::selection {
@@ -21,6 +25,15 @@
     display: flex;
     padding-top: 1rem;
     max-height: 3rem;
+    transition: top 0.3s ease-in-out;
+}
+
+.navbar-container.hide {
+    top: -100px;
+}
+
+.navbar-container.show {
+    top: 0px;
 }
 
 .header {
@@ -81,12 +94,12 @@
     padding-right: 1.04rem;
 }
 
-.navbar li>a {
+.navbar li > a {
     padding: 0.52rem 0.52rem;
 }
 
-.nav>li>a:hover,
-.nav>li>a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
     text-decoration: none;
 }
 
@@ -107,14 +120,18 @@
     color: var(--fontw);
 }
 
+#hidetext {
+    font-size: 0 !important;
+}
+
 .socials li {
     list-style-type: none;
     padding-left: 1.04rem;
     padding-right: 1.04rem;
 }
 
-.socials>li>a:hover,
-.socials>li>a:focus {
+.socials > li > a:hover,
+.socials > li > a:focus {
     text-decoration: none;
 }
 
@@ -152,9 +169,21 @@ body {
     background-size: cover;
 }
 
+#bgcredit {
+    transform: translate(-20rem, 5rem);
+}
+
+#bgcredit > a {
+    color: var(--fontw);
+    text-decoration: none;
+    text-shadow: -0.04rem 0.04rem 0.5rem #000;
+}
+
+#bgcredit > a:hover,
+#bgcredit > a:focus {
+    color: lightgray;
+}
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 700px){
-    
-} 
+@media screen and (max-width: 700px) {}

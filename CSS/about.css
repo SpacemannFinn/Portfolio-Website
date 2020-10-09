@@ -1,0 +1,46 @@
+/*about.html section*/
+
+a[href="about.html"] {
+    border-bottom: 0.02rem solid #ccc;
+}
+
+.about {
+    background-image: none;
+    background-color: slategray;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.trivia {
+    text-align: center;
+}
+
+.list {
+    margin: 0.5rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    display: grid;
+    place-items: center;
+    padding-top: 3rem;
+}
+
+
+#popin-onscroll{
+    visibility: hidden;
+}
+
+.about-blurb {
+    font-size: 1.2rem;
+    display: grid;
+    place-items: left;
+    padding-top: 3rem;
+    max-width: 40rem;
+    padding-left: 30rem;
+    padding-right: 29rem
+}
+
+#popup-list {
+    visibility: hidden;
+    padding-bottom: 10rem;
+}

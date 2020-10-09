@@ -109,6 +109,7 @@ textarea {
   /* Bottom margin */
   resize: vertical;
   /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Style the submit button with a specific background color etc */

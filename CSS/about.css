@@ -26,8 +26,8 @@ h2 {
 }
 
 
-#popin-onscroll{
-    visibility: hidden;
+#popin-onscroll {
+    opacity: 0;
 }
 
 .about-blurb {
@@ -41,6 +41,12 @@ h2 {
 }
 
 #popup-list {
-    visibility: hidden;
+    opacity: 0;
     padding-bottom: 10rem;
+}
+
+
+#popup-list.is-active{
+    opacity: 1;
+    transition: all ease 1.75s;
 }

@@ -9,7 +9,8 @@ $(window).scroll(function (event) {
 // run hasScrolled() and reset didScroll status
 setInterval(function () {
     if (didScroll) {
-        hasScrolled();
+        hasScrolled();;
+        $('#popup-list').addClass('is-active');
         didScroll = false;
     }
 }, 250);
@@ -24,16 +25,18 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
         $('.navbar-container').removeClass('show').addClass('hide');
-    } else {
+    } else if (st + $(window).height() - 10 < $(document).height()) {
+
         // Scroll Up
         // If did not scroll past the document (possible on mac)...
-        if (st + $(window).height() - 10< $(document).height()) {
-            $('.navbar-container').removeClass('hide').addClass('show');
-        }
+        $('.navbar-container').removeClass('hide').addClass('show');
     }
+
+
 
     lastScrollTop = st;
     console.log(lastScrollTop)
     console.log("document height " + $(document).height())
-    console.log("st + window height "+ (st + $(window).height()))
+    console.log("st + window height " + (st + $(window).height()))
+
 }

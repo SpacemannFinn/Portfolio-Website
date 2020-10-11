@@ -1,0 +1,77 @@
+a[href="projects.html"] {
+    border-bottom: 0.02rem solid #ccc;
+}
+
+.projects {
+    background-image: none;
+    background-color: #111137;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+
+.projects-showcase {
+    padding-top: 5rem;
+    display: grid;
+}
+
+.projects-showcase > h2 {
+    text-align: center;
+    font-size: 3rem
+}
+
+.projects-showcase > p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#projects {
+    place-items: center;
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+
+}
+
+#text {
+    position: absolute;
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 420;
+    transform: translate(31.5%, -420%);
+    -ms-transform: translate(22%, -200%);
+}
+
+img {
+    position: relative;
+    padding: 0.6rem;
+    padding-bottom: 1.5rem;
+    object-fit: cover;
+    width: 22rem;
+    height: 15rem;
+    transform: translateX(3.5rem);
+}
+
+
+@media screen and (max-width: 500px) {
+    :root{
+        font-size: 11px;
+    }
+    
+    .column {
+        width: 100%;
+    }
+    
+    #text {
+    transform: translate(44.5%, -490%);
+    -ms-transform: translate(44.5%, -490%);
+}
+
+    img {
+        width: 28rem;
+        height: 20rem;
+        transform: translateX(5.2rem);
+    }
+}

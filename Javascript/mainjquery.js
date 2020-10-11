@@ -1,7 +1,14 @@
     $(document).ready(function () {
+        var ext;
+
+        if($('html').hasClass('webp')){
+            ext = 'webp'
+        } else{
+            ext = 'png'
+        }
 
         //Background Randomiser
-        var bgArray = ['1.png', '2.png', '3.png'];
+        var bgArray = [`1.${ext}`, `2.${ext}`, `3.${ext}`];
         var bgNum = bgArray[Math.floor(Math.random() * bgArray.length)];
         $('body').css({
             'background-image': 'url(bgimages/' + bgNum + ')'
@@ -27,3 +34,6 @@
         }
 
     });
+
+
+    

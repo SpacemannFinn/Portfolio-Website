@@ -109,12 +109,6 @@ textarea {
   /* Bottom margin */
   resize: vertical;
   /* Allow the user to vertically resize the textarea (not horizontally) */
-  font-family: inherit;
-}
-
-input, textarea{
-
-  white-space:pre-wrap;
 }
 
 /* Style the submit button with a specific background color etc */

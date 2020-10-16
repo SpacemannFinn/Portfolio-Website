@@ -31,8 +31,6 @@ a[href="projects.html"] {
     flex-wrap: wrap;
 }
 
-.column {}
-
 #text {
     position: absolute;
     color: white;

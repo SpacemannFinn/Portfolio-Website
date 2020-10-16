@@ -9,7 +9,7 @@ $(window).scroll(function (event) {
 // run hasScrolled() and reset didScroll status
 setInterval(function () {
     if (didScroll) {
-        hasScrolled();;
+        hasScrolled();
         $('#popup-list').addClass('is-active');
         didScroll = false;
     }
@@ -35,8 +35,7 @@ function hasScrolled() {
 
 
     lastScrollTop = st;
-    console.log(lastScrollTop)
-    console.log("document height " + $(document).height())
-    console.log("st + window height " + (st + $(window).height()))
-
+    console.log(lastScrollTop);
+    console.log("document height " + $(document).height());
+    console.log("st + window height " + (st + $(window).height()));
 }

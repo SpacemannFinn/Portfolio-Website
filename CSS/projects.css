@@ -14,12 +14,12 @@ a[href="projects.html"] {
     display: grid;
 }
 
-.projects-showcase > h2 {
+.projects-showcase>h2 {
     text-align: center;
     font-size: 3rem
 }
 
-.projects-showcase > p {
+.projects-showcase>p {
     text-align: center;
     font-size: 1.1rem;
 }
@@ -31,9 +31,7 @@ a[href="projects.html"] {
     flex-wrap: wrap;
 }
 
-.column {
-
-}
+.column {}
 
 #text {
     position: absolute;
@@ -56,18 +54,18 @@ img {
 
 
 @media screen and (max-width: 500px) {
-    :root{
+    :root {
         font-size: 11px;
     }
-    
+
     .column {
         width: 100%;
     }
-    
+
     #text {
-    transform: translate(44.5%, -490%);
-    -ms-transform: translate(44.5%, -490%);
-}
+        transform: translate(44.5%, -490%);
+        -ms-transform: translate(44.5%, -490%);
+    }
 
     img {
         width: 28rem;

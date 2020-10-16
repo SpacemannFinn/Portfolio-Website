@@ -46,7 +46,7 @@ h2 {
 }
 
 
-#popup-list.is-active{
+#popup-list.is-active {
     opacity: 1;
     transition: all ease 1.75s;
 }

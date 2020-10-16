@@ -103,12 +103,12 @@ html {
     padding-right: 1.04rem;
 }
 
-.navbar li > a {
+.navbar li>a {
     padding: 0.52rem 0.52rem;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+.nav>li>a:hover,
+.nav>li>a:focus {
     text-decoration: none;
 }
 
@@ -139,8 +139,8 @@ html {
     padding-left: 1.04rem;
 }
 
-.socials > li > a:hover,
-.socials > li > a:focus {
+.socials>li>a:hover,
+.socials>li>a:focus {
     text-decoration: none;
 }
 
@@ -182,14 +182,14 @@ body {
     transform: translate(-20rem, 5rem);
 }
 
-#bgcredit > a {
+#bgcredit>a {
     color: var(--fontw);
     text-decoration: none;
     text-shadow: -0.04rem 0.04rem 0.5rem #000;
 }
 
-#bgcredit > a:hover,
-#bgcredit > a:focus {
+#bgcredit>a:hover,
+#bgcredit>a:focus {
     color: lightgray;
 }
 

@@ -1,10 +1,10 @@
     $(document).ready(function () {
         var ext;
-
+        //Changes image format between WebP and Png
         if($('html').hasClass('webp')){
-            ext = 'webp'
+            ext = 'webp';
         } else{
-            ext = 'png'
+            ext = 'png';
         }
 
         //Background Randomiser

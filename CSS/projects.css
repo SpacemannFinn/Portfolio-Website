@@ -10,24 +10,26 @@ a[href="projects.html"] {
 
 
 .projects-showcase {
-    padding-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    margin: auto;
 }
 
 .projects-showcase > h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     text-align: center;
     font-size: 3rem
 }
 
 .projects-showcase > p {
+    margin-top: 0rem;
     text-align: center;
     font-size: 1.1rem;
 }
 
 #projects {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     flex-direction: row;
 }
@@ -42,9 +44,10 @@ a[href="projects.html"] {
 }
 
 img {
-    height: 25rem;
-    width: 26rem;
-    object-fit: cover;;
+    height: 15rem;
+    width: 22rem;
+    object-fit: cover;
+    object-position: -1.4rem 0rem;
 }
 
 #text {

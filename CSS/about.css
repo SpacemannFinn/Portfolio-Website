@@ -25,8 +25,8 @@ a[href="about.html"] {
 
 h2 {
     font-size: 3.2rem;
-
-    margin-top: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
 }
 
 
@@ -36,10 +36,22 @@ h2 {
 
 .about-blurb {
     font-size: 1.2rem;
-    margin-top: 3rem;
-    max-width: 36rem;
-    display: inline-block;
-    text-align: left
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+#about-desc {
+    margin-top: 0rem;
+    max-width: 60rem;
+    text-align: left;
+}
+
+#about-bullet {
+    max-width: 30rem;
+    text-align: left;
 }
 
 #popup-list {

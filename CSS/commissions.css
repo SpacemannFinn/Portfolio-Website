@@ -1,0 +1,80 @@
+a[href="commissions.html"] {
+    border-bottom: 0.02rem solid #ccc;
+}
+
+.commissions {
+    background-image: none;
+    background-color: #111137;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+
+.projects-showcase {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-showcase > h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    font-size: 3rem
+}
+
+.projects-showcase > p {
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#projects {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    flex-direction: row;
+}
+
+.column {
+    display: inline-block;
+    position: relative;
+    margin: 1.5rem 0.6rem;
+    width: 22rem;
+    height: 15rem;
+    overflow: hidden;
+}
+
+img {
+    height: 15rem;
+    width: 22rem;
+    object-fit: cover;
+    object-position: -1.4rem 0rem;
+}
+
+#text {
+    position: absolute;
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 420;
+}
+
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 11px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    #text {
+        transform: translate(44.5%, -490%);
+        -ms-transform: translate(44.5%, -490%);
+    }
+
+    img {
+        width: 28rem;
+        height: 20rem;
+        transform: translateX(5.2rem);
+    }
+}

@@ -38,4 +38,5 @@ function hasScrolled() {
     console.log(lastScrollTop);
     console.log("document height " + $(document).height());
     console.log("st + window height " + (st + $(window).height()));
+    console.time(looper);
 }

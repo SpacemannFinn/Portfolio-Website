@@ -11,24 +11,42 @@ a[href="projects.html"] {
 
 .projects-showcase {
     padding-top: 5rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
-.projects-showcase>h2 {
+.projects-showcase > h2 {
     text-align: center;
     font-size: 3rem
 }
 
-.projects-showcase>p {
+.projects-showcase > p {
     text-align: center;
     font-size: 1.1rem;
 }
 
 #projects {
-    place-items: center;
-    padding-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex-direction: row;
+}
+
+.column {
+    display: inline-block;
+    position: relative;
+    margin: 1.5rem 0.6rem;
+    width: 22rem;
+    height: 15rem;
+    overflow: hidden;
+}
+
+img {
+    height: 25rem;
+    width: 26rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 #text {
@@ -36,18 +54,6 @@ a[href="projects.html"] {
     color: white;
     font-size: 2.6rem;
     font-weight: 420;
-    transform: translate(31.5%, -420%);
-    -ms-transform: translate(22%, -200%);
-}
-
-img {
-    position: relative;
-    padding: 0.6rem;
-    padding-bottom: 1.5rem;
-    object-fit: cover;
-    width: 22rem;
-    height: 15rem;
-    transform: translateX(3.5rem);
 }
 
 

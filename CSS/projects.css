@@ -29,7 +29,6 @@ a[href="projects.html"] {
 #projects {
     margin-top: 4rem;
     margin-left: 3rem;
-    margin-right: 3rem;
     flex-direction: row;
 }
 
@@ -45,8 +44,7 @@ a[href="projects.html"] {
 img {
     height: 25rem;
     width: 26rem;
-    object-fit: cover;
-    object-position: center;
+    object-fit: cover;;
 }
 
 #text {

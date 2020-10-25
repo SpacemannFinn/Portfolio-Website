@@ -19,15 +19,15 @@
 
         //Background Credit and Link assigner
         switch (bgNum) {
-            case '1.png':
+            case `1.${ext}`:
                 $('#bgcredit>a').text('FourtyFingers');
                 $('#bgcredit>a').attr('href', 'https://twitter.com/fourtyfingers');
                 break;
-            case '2.png':
+            case `2.${ext}`:
                 $('#bgcredit>a').text('DatGeekBoy');
                 $('#bgcredit>a').attr('href', 'https://twitter.com/Geekboytweets');
                 break;
-            case '3.png':
+            case `3.${ext}`:
                 $('#bgcredit>a').text('Jennytoons');
                 $('#bgcredit>a').attr('href', 'https://twitter.com/toonsjenny');
                 break;

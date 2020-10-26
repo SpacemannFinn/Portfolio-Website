@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,6 +16,18 @@
     <script type="text/javascript" src="/Javascript/webp.js"></script>
     <script type="text/javascript" src="/Javascript/mainjavascript.js"></script>
     <script type="text/javascript" src="/Javascript/contact.js"></script>
+    <script type="text/javascript">
+        var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        
+        var hash_pos = location.href.indexOf("#");
+        if (hash_pos > 0) {
+            var hash = location.href.substring(hash_pos, location.href.length);
+            clean_uri += hash;
+        }
+        
+        window.history.replaceState({}, document.title, clean_uri);
+        </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1"></script>
 </head>
 
 <!-- Boilerplate Navbar -->
@@ -62,7 +75,7 @@
     </div>
 
     <div class="contact-form">
-        <form id="contact-form">
+        <form id="contact-form" method="POST">
             <div class="pronouns">
                 <span class="label-input">pronouns</span><br />
                 <select name="pronouns" id="pronouns">
@@ -78,8 +91,8 @@
 
             <div class="name">
                 <span class="label-input">name</span><br />
-                <input name="fname" id="fname"type="text" class="form-control" required />
-                <input name="lname" id="lname"type="text" class="form-control" /><br />
+                <input name="fname" id="fname" type="text" class="form-control"/>
+                <input name="lname" id="lname" type="text" class="form-control" /><br />
                 <span class="underlabel">First Name*</span>
                 <span class="underlabel">Last Name</span>
             </div>
@@ -87,17 +100,17 @@
 
             <div class="email">
                 <span class="label-input">email*</span><br />
-                <input name="email" id="email" type="email" class="form-control" required />
+                <input name="email" id="email" type="email" class="form-control"/>
             </div>
             <br />
 
             <div class="message">
                 <span class="label-input">message*</span><br />
-                <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+                <textarea name="message" id="message" class="form-control" rows="4"></textarea>
             </div>
             <br />
             <div class=submit>
-            <input onclick="sendContact()" type="submit" class="form-control submit" value="submit" />
+                <input onclick="sendContact()" type="submit" class="form-control submit" value="submit" />
             </div>
         </form>
     </div>

@@ -15,14 +15,14 @@ a[href="projects.html"] {
     flex-direction: column;
 }
 
-.projects-showcase > h2 {
+.projects-showcase>h2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
     text-align: center;
     font-size: 3rem
 }
 
-.projects-showcase > p {
+.projects-showcase>p {
     margin-top: 0rem;
     text-align: center;
     font-size: 1.1rem;
@@ -31,7 +31,6 @@ a[href="projects.html"] {
 #projects {
     margin-top: 3rem;
     margin-left: 3rem;
-    flex-direction: row;
 }
 
 .column {
@@ -43,7 +42,23 @@ a[href="projects.html"] {
     overflow: hidden;
 }
 
+.column-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column:hover > .column-contents{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    transition: all ease 0.3s;
+}
+
 img {
+    position: relative;
     height: 15rem;
     width: 22rem;
     object-fit: cover;
@@ -52,9 +67,12 @@ img {
 
 #text {
     position: absolute;
+    z-index: 1;
     color: white;
     font-size: 2.6rem;
     font-weight: 420;
+    line-height: 2.6rem;
+    text-align: center;
 }
 
 

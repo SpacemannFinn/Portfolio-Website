@@ -10,6 +10,11 @@ a[href="about.html"] {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+#about {
+    display: block;
+    text-align: center;
+}
+
 .trivia {
     text-align: center;
 }
@@ -20,9 +25,8 @@ a[href="about.html"] {
 
 h2 {
     font-size: 3.2rem;
-    display: grid;
-    place-items: center;
-    padding-top: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 0rem;
 }
 
 
@@ -32,21 +36,30 @@ h2 {
 
 .about-blurb {
     font-size: 1.2rem;
-    display: grid;
-    place-items: left;
-    padding-top: 3rem;
-    max-width: 40rem;
-    padding-left: 30rem;
-    padding-right: 29rem
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+#about-desc {
+    margin-top: 0rem;
+    max-width: 60rem;
+    text-align: left;
+}
+
+#about-bullet {
+    max-width: 30rem;
+    text-align: left;
 }
 
 #popup-list {
     opacity: 0;
-    padding-bottom: 10rem;
 }
 
 
 #popup-list.is-active {
     opacity: 1;
-    transition: all ease 1.75s;
+    transition: all ease 0.75s;
 }

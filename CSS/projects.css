@@ -15,16 +15,20 @@ a[href="projects.html"] {
 }
 
 .projects-showcase {
-    padding-top: 5rem;
-    display: grid;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects-showcase>h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     text-align: center;
     font-size: 3rem
 }
 
 .projects-showcase>p {
+    margin-top: 0rem;
     text-align: center;
     font-size: 1.1rem;
 }

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +13,21 @@
     <title>contact</title>
     <script src="https://kit.fontawesome.com/2fba591cf1.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/Javascript/webp.js"></script>
     <script type="text/javascript" src="/Javascript/mainjavascript.js"></script>
+    <script type="text/javascript" src="/Javascript/contact.js"></script>
+    <script type="text/javascript">
+        var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        
+        var hash_pos = location.href.indexOf("#");
+        if (hash_pos > 0) {
+            var hash = location.href.substring(hash_pos, location.href.length);
+            clean_uri += hash;
+        }
+        
+        window.history.replaceState({}, document.title, clean_uri);
+        </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1"></script>
 </head>
 
 <!-- Boilerplate Navbar -->
@@ -54,29 +69,30 @@
 
     <div class="contact-blurb">
         <h2>
-            Thanks for sending me a message, I love you bud.
+            thanks for sending me a message, i love you bud
         </h2>
-        <p>If you don't like forms my email is nen@webcomicshub.co.uk</p>
+        <p>if you don't like forms my email is nen@webcomicshub.co.uk</p>
     </div>
 
     <div class="contact-form">
-        <form id="contact form">
+        <form id="contact-form" method="POST">
             <div class="pronouns">
                 <span class="label-input">pronouns</span><br />
                 <select name="pronouns" id="pronouns">
                     <option value="" disabled selected hidden></option>
-                    <option value=" male">He/Him</option>
-                    <option value="female">She/Her</option>
-                    <option value="non-gendered">They/Them</option>
-                    <option value="any">Any/All</option>
+                    <option value="He/Him">He/Him</option>
+                    <option value="She/Her">She/Her</option>
+                    <option value="They/Them">They/Them</option>
+                    <option value="Xe/Xir">Xe/Xir</option>
+                    <option value="Any">Any/All</option>
                 </select>
             </div>
             <br />
 
             <div class="name">
                 <span class="label-input">name</span><br />
-                <input name="fname" type="text" class="form-control" required />
-                <input name="lname" type="text" class="form-control" /><br />
+                <input name="fname" id="fname" type="text" class="form-control"/>
+                <input name="lname" id="lname" type="text" class="form-control" /><br />
                 <span class="underlabel">First Name*</span>
                 <span class="underlabel">Last Name</span>
             </div>
@@ -84,17 +100,17 @@
 
             <div class="email">
                 <span class="label-input">email*</span><br />
-                <input name="email" type="email" class="form-control" required />
+                <input name="email" id="email" type="email" class="form-control"/>
             </div>
             <br />
 
             <div class="message">
                 <span class="label-input">message*</span><br />
-                <textarea name="message" class="form-control" rows="4" required></textarea>
+                <textarea name="message" id="message" class="form-control" rows="4"></textarea>
             </div>
             <br />
             <div class=submit>
-                <input type="submit" class="form-control submit" value="submit" />
+                <input onclick="sendContact()" type="submit" class="form-control submit" value="submit" />
             </div>
         </form>
     </div>

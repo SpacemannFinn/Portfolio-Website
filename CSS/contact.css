@@ -1,136 +1,159 @@
 /* Contact.html Section */
 
 a[href="contact.html"] {
-  border-bottom: 0.02rem solid #ccc;
-}
-
-.contact-blurb {
-  padding-top: 7rem;
-  padding-left: 3rem;
-  padding-right: 7rem;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: bold;
-  text-align: center;
+    border-bottom: 0.02rem solid #ccc;
 }
 
 .contact {
-  background-image: none;
-  background-color: slateblue;
-  font-family: "IBM Plex Sans", sans-serif;
+    background-image: none;
+    background-color: slateblue;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
+.contact-blurb {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 3rem
+}
+
+
+p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+
 .contact-form {
-  padding-top: 2rem;
-  padding-left: 30.9rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+#contact-form {
+    display: inline-block;
+    text-align: left;
 }
 
 input[name="fname"] {
-  width: 15rem;
+    width: 15rem;
 }
 
 input[name="lname"] {
-  width: 15rem;
+    width: 15rem;
 }
 
 input[name="email"] {
-  width: 13rem;
+    width: 13rem;
 }
 
 .label-input {
-  font-size: 0.9rem;
-  font-weight: 200;
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
 .underlabel {
-  font-weight: bold;
-  font-size: 0.73rem;
-  padding-right: 11.7rem;
+    font-weight: bold;
+    font-size: 0.73rem;
+    padding-right: 11.7rem;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"] {
-  /* Some padding */
-  border: 0.01rem solid #ccc;
-  /* Gray border */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  padding: 0.5rem;
-  /* Add a top margin */
-  margin: 0 auto;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Some padding */
+    border: 0.01rem solid #ccc;
+    /* Gray border */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    padding: 0.5rem;
+    /* Add a top margin */
+    margin: 0 auto;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 input[type="email"] {
-  /* Some padding */
-  border: 0.01rem solid #ccc;
-  /* Gray border */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  padding-left: 0.4rem;
-  width: 30.176rem;
-  height: 2.2rem;
-  /* Add a top margin */
-  margin: 0 auto;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Some padding */
+    border: 0.01rem solid #ccc;
+    /* Gray border */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    padding-left: 0.4rem;
+    width: 30.176rem;
+    height: 2.2rem;
+    /* Add a top margin */
+    margin: 0 auto;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 select {
-  /* Some padding */
-  border: 0.01rem solid #ccc;
-  /* Gray border */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  padding: 0.3rem;
-  /* Add a top margin */
-  margin: 0 auto;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Some padding */
+    border: 0.01rem solid #ccc;
+    /* Gray border */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    padding: 0.3rem;
+    /* Add a top margin */
+    margin: 0 auto;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 
 textarea {
-  /* Some padding */
-  border: 0.01rem solid #ccc;
-  /* Gray border */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  padding-top: 0.3rem;
-  width: 33.5rem;
-  height: 9rem;
-  /* Add a top margin */
-  margin: 0 auto;
-  /* Bottom margin */
-  resize: vertical;
-  /* Allow the user to vertically resize the textarea (not horizontally) */
+    /* Some padding */
+    border: 0.01rem solid #ccc;
+    /* Gray border */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.3rem;
+    width: 33.5rem;
+    height: 9rem;
+    /* Add a top margin */
+    margin: 0 auto;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: 0.1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 0.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .submit {
-  padding-top: 1rem;
-  padding-left: 12rem;
+    padding-top: 1rem;
+    padding-left: 12rem;
 }
 
 .line {
-  padding-right: 7rem;
+    padding-right: 7rem;
 }

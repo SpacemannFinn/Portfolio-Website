@@ -1,0 +1,71 @@
+a[href="commissions.html"] {
+  border-bottom: 0.02rem solid #ccc;
+}
+
+.commissions {
+  background-image: none;
+  background-color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#commissions {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.commission-showcase {
+  padding-top: 5rem;
+  display: grid;
+}
+
+.commission-showcase>h2 {
+  text-align: center;
+  font-size: 3rem
+}
+
+.commission-showcase>p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.column {
+  justify-content: center;
+  transition: 0.3s box-shadow, 0.3s ease-in-out transform;
+  padding: 0.6rem;
+  padding-bottom: 1.5rem;
+  background-size: contain;
+  width: 22rem;
+  height: 13rem;
+  margin: auto;
+} 
+
+.column:hover {
+  cursor: pointer;
+  box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.2);
+  transform: scale(1.1)
+}
+
+
+#text {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 420;
+}
+
+/*Handles Background Images*/
+#roach{
+  background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+}
+
+#demon{
+  background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+}
+
+#cat{
+  background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+}
+
+#bird{
+  background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+}

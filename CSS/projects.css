@@ -8,6 +8,11 @@ a[href="projects.html"] {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+#projects {
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .projects-showcase {
     padding-top: 5rem;
@@ -24,30 +29,62 @@ a[href="projects.html"] {
     font-size: 1.1rem;
 }
 
-#projects {
-    place-items: center;
-    padding-top: 4rem;
+ .column {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.3s box-shadow;
+} 
+
+.column:hover {
+    cursor: pointer;
+    box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.2);
 }
 
 #text {
-    position: absolute;
     color: white;
     font-size: 2.6rem;
     font-weight: 420;
-    transform: translate(31.5%, -420%);
-    -ms-transform: translate(22%, -200%);
 }
 
-img {
-    position: relative;
+/*Handles Background Images*/
+#webcomicshub{
+    background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
     padding: 0.6rem;
     padding-bottom: 1.5rem;
-    object-fit: cover;
+    background-size: contain;
     width: 22rem;
-    height: 15rem;
-    transform: translateX(3.5rem);
+    height: 13rem;
+    margin: auto;
+}
+
+#spacemannfinn{
+    background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+    padding: 0.6rem;
+    padding-bottom: 1.5rem;
+    background-size: contain;
+    width: 22rem;
+    height: 13rem;
+    margin: auto;
+}
+
+#comics{
+    background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+    padding: 0.6rem;
+    padding-bottom: 1.5rem;
+    background-size: contain;
+    width: 22rem;
+    height: 13rem;
+    margin: auto;
+}
+
+#music{
+    background-image: url("https://dummyimage.com/1920x1080/636363/0011ff.png&text=Placeholder");
+    padding: 0.6rem;
+    padding-bottom: 1.5rem;
+    background-size: contain;
+    width: 22rem;
+    height: 13rem;
+    margin: 0 auto;
 }
 
 

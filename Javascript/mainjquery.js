@@ -1,18 +1,18 @@
     $(document).ready(function () {
         var ext;
         //Changes image format between WebP and Png
-        if($('html').hasClass('webp')){
+        if ($('html').hasClass('webp')) {
             ext = 'webp';
-        } else{
+        } else {
             ext = 'png';
         }
 
         //Background Randomiser
         var bgArray = [`1.${ext}`, `2.${ext}`, `3.${ext}`];
         var bgNum = bgArray[Math.floor(Math.random() * bgArray.length)];
-        $('body').css({
-            'background-image': 'url(bgimages/' + bgNum + ')'
-        });
+        $(':root').css(
+            '--bgimage', 'url(/bgimages/' + bgNum + ')'
+        );
 
         console.log(bgNum);
 
@@ -34,6 +34,3 @@
         }
 
     });
-
-
-    
